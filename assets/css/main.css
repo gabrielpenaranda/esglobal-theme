@@ -1,0 +1,797 @@
+:root {
+    --eg-blanco: #ffffff;
+    --eg-azul-1: #293271;
+    --eg-negro: #000000;
+    --eg-negro-raisin: #222222;
+    --eg-negro-1: #202020;
+    --eg-negro-2: #1d1d1d;
+    --eg-verde-1: #00bf8b;
+    --eg-verde-2: #008d67;
+    --eg-gris-1: #f4f7fe;
+    --eg-gris-2: #bbbbba;
+    --eg-gris-3: #585858;
+
+    --eg-azul-gradiente: linear-gradient(#4E5FD7, #293271);
+
+    --ywf--family-figtree: 'Figtree';
+}
+
+/* Color: Boton*/
+.btn.btn-eg-verde-1 {
+    background-color: var(--eg-verde-1);
+    border-color: var(--eg-verde-1);
+    color: var(--eg-blanco);
+}
+
+.btn.btn-eg-verde-1:hover,
+.btn.btn-eg-verde-1:focus,
+.btn.btn-eg-verde-1:active {
+    background-color: var(--eg-verde-2);
+    /* o un tono más oscuro si quieres efecto */
+    border-color: var(--eg-verde-2);
+    color: var(--eg-blanco);
+    opacity: 0.9;
+    /* opcional */
+}
+
+/* Color: Fondo */
+.bg-eg-verde-1 {
+    background-color: var(--eg-verde-1);
+}
+
+.bg-eg-azul-1 {
+    background-color: var(--eg-azul-1) !important;
+}
+
+/* Color: Textos*/
+
+.text-eg-azul-1 {
+    color: var(--eg-azul-1);
+}
+
+/* Texto */
+.text-justified {
+    text-align: justify !important;
+}
+
+/* Fuente */
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-300-normal-1764174611.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-400-normal-1764174611.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-500-normal-1764174612.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-600-normal-1764174612.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-700-normal-1764174612.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-800-normal-1764174612.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-900-normal-1764174612.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-300-italic-1764174612.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-400-italic-1764174613.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-500-italic-1764174613.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-600-italic-1764174613.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-700-italic-1764174613.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-800-italic-1764174613.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/wp-content/uploads/yabe-webfont/fonts/google-fonts-figtree-v8-latin-900-italic-1764174614.woff2') format("woff2");
+}
+
+
+
+
+/**/
+
+/* Navbar */
+.navbar .nav-link {
+    color: var(--eg-negro-raisin) !important;
+    font-weight: 300 !important;
+    margin-right: 15px !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--eg-azul-1) !important;
+    font-weight: bold !important;
+}
+
+
+/* ESTILOS DE PAGINA */
+
+
+/* navbar-brand img {
+    height: 40px;
+} */
+
+/* .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/fondo_hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+} */
+
+.hero-section {
+    position: relative;
+    padding: 100px 0;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #293271 0%, #293271 100%), url('/esglobal/wp-content/themes/esglobal/assets/img/fondo_hero.jpg') lightgray 50% / cover no-repeat;
+    background-blend-mode: multiply, normal;
+   /*  background-image: url('/esglobal/wp-content/themes/esglobal/assets/img/fondo_hero.jpg'); */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    /* ← ¡Aquí el desenfoque! */
+    z-index: 1;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 25, 43, 0.6);
+    /* Capa de color oscuro encima del blur */
+    z-index: 2;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/*******************************************/
+.brand-logos {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.brand-logos img {
+    height: 50px;
+    margin: 0 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.brand-logos img:hover {
+    opacity: 1;
+}
+
+.about-section {
+    padding: 60px 0;
+}
+
+/* .mission-vision-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--eg-azul-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+} */
+
+.stats-section {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/wp-content/themes/esglobal/assets/img/counter.webp') no-repeat center center; */
+    background: linear-gradient(rgba(78, 95, 215, 0.6), rgba(41,50,113, 2)), url('/wp-content/themes/esglobal/assets/img/counter.webp') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-item-left {
+    text-align: left;
+    padding: 20px;
+}
+
+.stat-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.solutions-section {
+    padding: 60px 0;
+}
+
+.solution-card {
+    border: 2px solid var(--eg-azul-1);
+    border-radius: 15px;
+    padding: 30px;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.solution-card i {
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.solution-card h3 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.training-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.newsletter-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x400/000066/FFFFFF?text=Newsletter+Background') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+
+/* Marquesina de logos */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f9fa;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee__content {
+    display: inline-block;
+    /* padding-left: 100%; */
+    list-style: none;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee__content img {
+    height: 40px;
+    /* Ajusta el tamaño */
+    margin: 0 20px;
+    vertical-align: middle;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.marquee__content img:hover {
+    opacity: 1;
+}
+
+/* Animación de desplazamiento */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Iconos circulares seccion nosotros */
+.icon-circle {
+    /* Tamaño del círculo (ajusta según necesites) */
+    width: 80px;
+    height: 60px;
+
+    /* Fondo azul (usa tu variable o color directo) */
+    background-color: #293271;
+    /* o var(--eg-azul-1) */
+
+    /* Hace que sea un círculo perfecto */
+    border-radius: 50%;
+
+    /* Centrado vertical y horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Espacio entre los íconos */
+    /* gap: 4px; */
+
+    /* Espacio interior para evitar que los íconos toquen el borde */
+    padding: 10px;
+
+    /* Asegura que el padding no afecte el tamaño total */
+    box-sizing: border-box;
+}
+
+.icon-circle .icon {
+    /* Tamaño de los íconos PNG */
+    width: 24px;
+    height: auto;
+    /* mantiene proporción */
+
+    /* Evita que el navegador los encoja */
+    flex-shrink: 0;
+
+    /* Asegura que el fondo transparente funcione */
+    background: none;
+}
+
+/* Imagenes seccion nosotros */
+/* -------------------------------------- */
+/* ESTILOS GENERALES DE IMAGEN */
+/* -------------------------------------- */
+.custom-image {
+    border-radius: 20px;
+    /* Bordes redondeados para ambas imágenes */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-stack-container {
+    position: relative;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+.image-wrapper {
+    position: absolute;
+    width: 65%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.upper-image-wrapper {
+    width: 70%;
+    max-width: 450px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.lower-image-wrapper {
+    width: 60%;
+    max-width: 400px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    z-index: 2;
+
+    /* Anillo blanco */
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los íconos en el texto (ejemplo) */
+.icon-box {
+    font-size: 1.8rem;
+    color: #007bff;
+    background-color: #e9f7ff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* -------------------------------------- */
+/* AJUSTES RESPONSIVOS */
+/* -------------------------------------- */
+
+/* En LG y más grandes: Imágenes a la izquierda, Texto a la derecha (POSICIÓN INVERTIDA) */
+@media (min-width: 992px) {
+    .images-column {
+        padding-right: 50px;
+    }
+
+    .text-content-wrapper {
+        padding-left: 30px;
+    }
+
+    .image-stack-container {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Imagen Superior (Reunión) -> VA A LA DERECHA, FONDO (z-index: 1) */
+    .upper-image-wrapper {
+        position: absolute;
+        left: 30%;
+        /* Empieza 30% desde la izquierda, colocándola a la derecha */
+        top: 0;
+        margin: 0;
+        transform: translate(0, 0);
+        width: 70%;
+        max-width: 450px;
+        height: 400px;
+        z-index: 1;
+        /* Fondo */
+    }
+
+    /* Imagen Inferior (Planos) -> VA A LA IZQUIERDA, FRENTE (z-index: 2) */
+    .lower-image-wrapper {
+        top: 45%;
+        /* Sigue desplazada hacia abajo */
+        left: 0;
+        /* Empieza desde la izquierda del contenedor */
+        width: 60%;
+        max-width: 400px;
+        height: 350px;
+        z-index: 2;
+        /* Frente, con anillo blanco */
+    }
+}
+
+
+/* En MD y más pequeños: Texto arriba, Imágenes debajo (flujo normal) */
+@media (max-width: 991.98px) {
+    .custom-section-layout {
+        flex-direction: column;
+    }
+
+    /* El orden se revierte para que el texto vaya arriba en MD y más pequeños */
+    .order-lg-1,
+    .order-lg-2 {
+        order: unset !important;
+    }
+
+    /* Resetear las posiciones de las imágenes para que se muestren en flujo normal */
+    .image-stack-container {
+        height: auto;
+        padding-bottom: 0;
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .image-wrapper {
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 100%;
+    }
+
+    .upper-image-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0 auto 1.5rem auto;
+        width: 80%;
+        max-width: 400px;
+        height: 80%;
+    }
+
+    .lower-image-wrapper {
+        position: static;
+        margin: 0 auto;
+        top: auto;
+        left: auto;
+        width: 80%;
+        max-width: 400px;
+        height: 80%;
+    }
+
+    .custom-image {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (opcional) */
+@media (max-width: 575.98px) {
+
+    .upper-image-wrapper,
+    .lower-image-wrapper {
+        width: 95%;
+    }
+}
+
+
+
+/* Contador */
+
+/* --- ESTILOS PARA EL CONTENEDOR FLEX (CAJA DE ESTADÍSTICAS) --- */
+/* --- ESTILOS PARA EL CONTENEDOR FLEX (NO SE MODIFICAN) --- */
+/* --- ESTILOS BASE DEL CONTENEDOR (SIN FONDOS AQUÍ) --- */
+.counter {
+    display: flex;
+    max-width: 1440px;
+    min-height: 365px;
+    padding: 20px 46px 20px 70px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 152px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    color: white;
+    /* Asegura que el texto se vea */
+
+    /* CRÍTICO para que el pseudo-elemento se posicione correctamente */
+    position: relative;
+    /* CRÍTICO para asegurar que el contenido (los números) esté por encima del fondo */
+    z-index: 1;
+}
+
+/* --- CLASE DE IMAGEN BASE (SOLO LA IMAGEN Y SU COBERTURA) --- */
+.counter-image {
+    /* **SOLO** la imagen para garantizar que 'cover' funcione */
+    background-image: url('/wp-content/themes/esglobal/assets/img/counter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* El modo de mezcla NO va aquí, sino en el pseudo-elemento */
+}
+
+
+/*** SERVICES - CORREGIDO Y OPTIMIZADO ***/
+
+/* Contenedor de cada servicio */
+.services-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    /* importante para el overlay */
+    transition: transform 0.3s;
+}
+
+/* Overlay verde que aparece al hacer hover */
+.services-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 191, 139, 0.85);
+    /* verde más intenso */
+    transition: height 0.4s ease;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Al hacer hover: expande el overlay */
+.services-item:hover::after {
+    height: 100%;
+}
+
+/* Contenido interno */
+.solution-card {
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 2;
+    /* siempre por encima del overlay */
+}
+
+.solution-card i,
+.solution-card img {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+    color: var(--eg-azul-1);
+    max-width: 80px;
+    /* opcional: limita el tamaño de la imagen */
+    height: auto;
+}
+
+/* ✅ Hover: todos los textos e íconos se vuelven BLANCOS */
+.services-item:hover .solution-card,
+.services-item:hover .solution-card i,
+.services-item:hover .solution-card img,
+.services-item:hover .solution-card p {
+    color: #ffffff !important;
+}
+
+/* Efecto suave en hover */
+.services-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Asegura que todas las tarjetas tengan la misma altura */
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services .col-md-4 {
+    display: flex;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* ¡Importante! */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+/****************************************************************/
+/****************************************************************/
+
+/* Contacto */
+
+.contact-section {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/wp-content/themes/esglobal/assets/img/counter.webp') no-repeat center center; */
+    background: linear-gradient(rgba(78, 95, 215, 0.6), rgba(41, 50, 113, 2)), url('/wp-content/themes/esglobal/assets/img/counter.webp') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 0;
+}

@@ -1,0 +1,78 @@
+/*
+Theme Name: Es Global Theme
+Theme URI: https://esglobal.com.ve
+Author: GPG
+Description: This is a very basic theme with Bootstrap
+Author URI: https://gabrielpenaranda.github.ui
+Version: 1.0
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: 0;
+}
+
+/* SHOP PAGE */
+
+/* Add to cart button */
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+li.product {
+    text-align: center;
+}
+
+/* SINGLE PRODUCT PAGE */
+
+button.single_add_to_cart_button.button.alt {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* Icono roto en cart*/
+img.card-img-top {
+    display: none !important;
+}
+
+img.card-img-top.blog {
+    display: block !important;
+}
+
+
+/* .wp-block-woocommerce-cart-order-summary-coupon-form-block.wc-block-components-totals-wrapper {
+    display: none !important;
+} */
+
+/* Elimina los marcadores de lista (los "puntos") de las categorías */
+#custom-categories-sidebar ul {
+    list-style: none;
+    /* Opcional: Esto también asegura que no haya padding extra que pueda desplazar los elementos */
+    margin: 0;
+    padding: 0;
+}
+
+li.cat-item {
+    list-style: none;
+    /* Opcional: Esto también asegura que no haya padding extra que pueda desplazar los elementos */
+    margin: 0;
+    padding: 0;
+}
+
