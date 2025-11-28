@@ -138,7 +138,7 @@
                 <div class="col-md-4">
                     <div class="services-item">
                         <div class="solution-card services-content">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/telefonia.png" alt="Telefonía IP" class="mx-auto img-fluid">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/telefonia.gif" alt="Telefonía IP" class="mx-auto img-fluid rounded-3">
                             <p class="text-eg-azul-1 fs-4 text-center fw-bold">Telefonía IP</p>
                             <p class="text-justified">Comunicación avanzada con llamadas estables, calidad HD y sistemas inteligentes para
                                 empresas. Optimiza tus operaciones con una red moderna y eficiente.</p>
@@ -148,7 +148,7 @@
                 <div class="col-md-4">
                     <div class="services-item">
                         <div class="solution-card services-content">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/domotica.png" alt="Domótica" class="mx-auto img-fluid">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/domotica.gif" alt="Domótica" class="mx-auto img-fluid rounded-3">
                             <p class="text-eg-azul-1 fs-4 text-center fw-bold">Domótica</p>
                             <p class="text-justified">Automatiza tu hogar o negocio con tecnología inteligente que ofrece confort, seguridad y
                                 control total desde cualquier dispositivo.</p>
@@ -158,7 +158,7 @@
                 <div class="col-md-4">
                     <div class="services-item">
                         <div class="solution-card services-content">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/wifi.png" alt="Soluciones Wi-Fi" class="mx-auto img-fluid">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/wifi.gif" alt="Soluciones Wi-Fi" class="mx-auto img-fluid rounded-3">
                             <p class="text-eg-azul-1 fs-4 text-center fw-bold">Soluciones Wi-Fi</p>
                             <p class="text-justified">Conectividad inalámbrica robusta y estable para garantizar cobertura óptima y alto
                                 rendimiento en cualquier entorno.</p>
@@ -168,7 +168,7 @@
                 <div class="col-md-4">
                     <div class="services-item">
                         <div class="solution-card services-content">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/consultoria.png" alt="Consultoría tecnológica" class="mx-auto img-fluid">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/consultoria.gif" alt="Consultoría tecnológica" class="mx-auto img-fluid rounded-3">
                             <p class="text-eg-azul-1 fs-4 text-center fw-bold">Consultoría Tecnológica</p>
                             <p class="text-justified">Asesoría experta para optimizar tus procesos con soluciones innovadoras y efectivas.</p>
                         </div>
@@ -177,7 +177,7 @@
                 <div class="col-md-4">
                     <div class="services-item">
                         <div class="solution-card services-content">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/proyectos.png" alt="Proyectos a medida" class="mx-auto img-fluid">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/proyectos.gif" alt="Proyectos a medida" class="mx-auto img-fluid rounded-3">
                             <p class="text-eg-azul-1 fs-4 text-center fw-bold">Proyectos a medida</p>
                             <p class="text-justified">Desarrollo de soluciones personalizadas que se adaptan a las necesidades específicas de tu empresa.</p>
                         </div>
@@ -186,7 +186,7 @@
                 <div class="col-md-4">
                     <div class="services-item">
                         <div class="solution-card services-content">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/seguridad.png" alt="Seguridad Electrónica" class="mx-auto img-fluid">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/servicios/seguridad.gif" alt="Seguridad Electrónica" class="mx-auto img-fluid rounded-3">
                             <p class="text-eg-azul-1 fs-4 text-center fw-bold">Seguridad Electrónica</p>
                             <p class="text-justified">Blindamos su infraestructura 24/7 con CCTV inteligente y control de acceso biométrico.</p>
                         </div>
@@ -217,7 +217,8 @@
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/logos/ubiquiti.png" alt="Ubiquiti Networks" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
                     <div id="carouselExampleIndicators" class="carousel slide testimonial-carousel">
 
                         <div class="carousel-indicators custom-indicators">
@@ -272,6 +273,9 @@
                         </button>
                     </div>
                 </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-success">Consulta nuestro calendario de cursos</a>
             </div>
         </div>
     </section>
@@ -330,8 +334,8 @@
     </section>
  -->
 
-    <section id="contacto" class="contact-section py-2">
-        <div class="container-fluid py-3">
+    <section id="contacto" class="contact-section py-4">
+        <div class="container-fluid py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-5 text-center mb-5">
                     <h2 class="fs-1">Contáctanos</h2>
@@ -343,7 +347,7 @@
                     <h2 class="fs-1">Nuestra Ubicación</h2>
                     <p class="lead">Visítanos o escríbenos para coordinar una reunión.</p>
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.3584356843717!2d-69.29752612426104!3d10.069688071830242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767a1f21a12f5%3A0xac786c7e57860ae6!2sEs%20Global%20C.A.!5e0!3m2!1ses-419!2sve!4v1764279561326!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.3584356843717!2d-69.29752612426104!3d10.069688071830242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767a1f21a12f5%3A0xac786c7e57860ae6!2sEs%20Global%20C.A.!5e0!3m2!1ses-419!2sve!4v1764279561326!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('secundario'); ?>
 
 <!-- Page header with logo and tagline-->
 <!-- <header class="py-5 bg-light border-bottom mb-4">

@@ -34,7 +34,7 @@
                 </svg>
                 <p><i class="bi bi-geo-alt me-2"></i>Carrera 6 entre calles 4 y 5, Casa #4-24, Barquisimeto 3001,
                     Lara</p>
-                <p><i class="bi bi-telephone me-2"></i>+58 414 5529461</p>
+                <p><i class="bi bi-telephone me-2"></i> +58 422 5098155</p>
             </div>
             <div class="col-md-2">
                 <h6>ACCESO RÁPIDO</h6>
