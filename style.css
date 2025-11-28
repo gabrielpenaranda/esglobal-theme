@@ -7,11 +7,11 @@ Author URI: https://gabrielpenaranda.github.ui
 Version: 1.0
 */
 
-html,
+/* html,
 body {
     height: 100%;
 }
-
+ */
 body {
     display: flex;
     flex-direction: column;

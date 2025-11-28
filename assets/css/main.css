@@ -54,6 +54,80 @@
     text-align: justify !important;
 }
 
+
+/******* PARALLAX *************/
+/* .parallax1 {
+    background-image: url("/wp-content/themes/esglobal/assets/img/parallax_mikrotik.webp");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("/wp-content/themes/esglobal/assets/img/parallax_ubiquiti.webp");
+
+    height: 400px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1,
+.parallax2 {
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .parallax1,
+    .parallax2 {
+        background-attachment: scroll;
+        height: 400px;
+    }
+} */
+
+.parallax1,
+.parallax2 {
+    /* 1. Definición de la imagen y tamaño/posición */
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* 2. PROPIEDAD CRÍTICA PARA EL PARALLAX */
+    background-attachment: fixed;
+}
+
+.parallax1 {
+    background-image: url("/wp-content/themes/esglobal/assets/img/parallax_mikrotik.webp");
+}
+
+.parallax2 {
+    background-image: url("/wp-content/themes/esglobal/assets/img/parallax_ubiquiti.webp");
+}
+
+@media (max-width: 768px) {
+
+    .parallax1,
+    .parallax2 {
+        /* 1. ANULAR IMAGEN DE FONDO (CRÍTICO) */
+        background-image: none !important;
+        /* Desactiva la imagen */
+
+        /* 2. ANULAR PARALLAX Y ASEGURAR COMPATIBILIDAD */
+        background-attachment: scroll;
+
+        /* 3. RESPONSIVIDAD (Altura reducida para no ocupar espacio innecesario) */
+        height: 100px;
+        /* Puedes usar 100px o 0px si no necesitas el espacio */
+
+        /* Opcional: Establecer un color de fondo sólido si no hay imagen */
+        background-color: #f8f8f8;
+    }
+}
+
+
 /* Fuente */
 @font-face {
     font-family: 'Figtree';
@@ -313,6 +387,7 @@
 
 .solutions-section {
     padding: 60px 0;
+    background-color: var(--eg-gris-1);
 }
 
 .solution-card {
@@ -413,7 +488,7 @@
     display: inline-block;
     /* padding-left: 100%; */
     list-style: none;
-    animation: marquee 30s linear infinite;
+    animation: marquee 15s linear infinite;
 }
 
 .marquee__content img {
@@ -703,6 +778,7 @@
 
 /* Contenedor de cada servicio */
 .services-item {
+    background-color: #ffffff;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -785,6 +861,189 @@
 }
 /****************************************************************/
 /****************************************************************/
+/* Testimonios */
+* -------------------------------------------------------------------------- */
+/* ========================================= */
+/* 1. VARIABLES GLOBALES Y UTILIDADES */
+/* ========================================= */
+:root {
+    /* Define tus variables de color aquí o asegúrate que ya existan */
+    /* --eg-azul-1: #4E5FD7;  */
+    --eg-gris-fondo-claro: #f0f0f0;
+    /* Fondo de los Controles (Gris Claro) */
+    --eg-negro-texto: #333;
+    --eg-gris-texto: #666;
+}
+
+/* ========================================= */
+/* 2. CONTENEDOR PRINCIPAL: TESTIMONIAL CAROUSEL */
+/* (Borde redondeado y Sombra) */
+/* ========================================= */
+.testimonial-carousel {
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    min-height: 280px;
+
+    /* Padding para el contenido (separado de los controles y bordes) */
+    padding: 40px 60px;
+
+    /* Efecto Flotante */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin: 30px 0;
+}
+
+/* ========================================= */
+/* 3. ESTILOS DEL CONTENIDO INTERNO */
+/* ========================================= */
+.carousel-item {
+    padding: 0 40px;
+    /* Ajuste interno para la cita */
+}
+
+.carousel-item>.bi-quote {
+    font-size: 3rem;
+    color: var(--eg-azul-1);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--eg-negro-texto);
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: var(--eg-gris-texto);
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid var(--eg-azul-1);
+}
+
+.testimonial-author strong {
+    color: var(--eg-negro-texto);
+}
+
+
+/* ========================================= */
+/* 4. ESTILOS DE LOS INDICADORES (CÍRCULOS AZULES A LA DERECHA) */
+/* ========================================= */
+.testimonial-carousel .carousel-indicators.custom-indicators {
+    bottom: 40px;
+    right: 60px;
+    /* POSICIÓN: DERECHA */
+    left: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    /* ALINEACIÓN: DERECHA */
+    transform: none;
+}
+
+.testimonial-carousel .carousel-indicators.custom-indicators button {
+    background-color: var(--eg-azul-1);
+    /* COLOR: AZUL */
+    border: 2px solid var(--eg-azul-1);
+    border-radius: 50%;
+    width: 20px;
+    /* TAMAÑO PEQUEÑO */
+    height: 20px;
+    opacity: 0.5;
+    margin: 0 4px;
+    color: white;
+    font-weight: normal;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.testimonial-carousel .carousel-indicators.custom-indicators button.active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* ========================================= */
+/* 5. ESTILOS DE LOS CONTROLES (CÍRCULOS GRIS CLARO) */
+/* ========================================= */
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+    background-color: var(--eg-gris-fondo-claro);
+    /* COLOR: GRIS CLARO */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 1;
+    /* Siempre visible */
+    transition: opacity 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Posicionamiento en los bordes del carrusel */
+.testimonial-carousel .carousel-control-prev {
+    left: 20px;
+}
+
+.testimonial-carousel .carousel-control-next {
+    right: 20px;
+}
+
+.testimonial-carousel .carousel-control-prev:hover,
+.testimonial-carousel .carousel-control-next:hover {
+    opacity: 0.85;
+}
+
+/* --- FLECHAS SVG BLANCAS --- */
+
+/* Flecha Izquierda (CRÍTICO: Aseguramos que la flecha exista y apunte a la izquierda) */
+.testimonial-carousel .carousel-control-prev-icon {
+    /* SVG de flecha IZQUIERDA (Usamos fill='%23000' para negro, ya que el fondo es gris claro) */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+/* Flecha Derecha (CRÍTICO: Aseguramos que la flecha exista y apunte a la derecha) */
+.testimonial-carousel .carousel-control-next-icon {
+    /* SVG de flecha DERECHA (Usamos fill='%23000' para negro) */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+/* ========================================= */
+/* 6. AJUSTES RESPONSIVOS */
+/* ========================================= */
+@media (max-width: 767.98px) {
+    .testimonial-carousel {
+        padding: 30px 20px 60px 20px;
+    }
+
+    .testimonial-carousel .carousel-control-prev,
+    .testimonial-carousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-carousel .carousel-indicators.custom-indicators {
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+    }
+}
+
+
 
 /* Contacto */
 

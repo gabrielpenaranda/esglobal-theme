@@ -21,7 +21,7 @@
 
 <!-- Brand Logos -->
 <section class="brand-logos">
-    <div class="container">
+    <div class="containe-fluid">
         <h5 class="text-center mb-2">Nuestras marcas Aliadas</h5>
         <div class="marquee">
             <div class="marquee__content">
@@ -92,6 +92,7 @@
 </section>
 
 
+<div class="parallax1"></div>
 
 <<!-- Stats Section -->
     <section class="stats-section">
@@ -198,29 +199,87 @@
         </div>
     </section>
 
+    <div class="img-fluid parallax2"></div>
+
     <!-- Training Section -->
     <section id="formaciones" class="training-section">
         <div class="container">
             <h2 class="text-center mb-3">Certifícate y lidera el mundo digital</h2>
-            <p class="text-center mb-5">Capacitación experta en Barquisimeto: Inicia tu carrera en redes con las
-                certificaciones más demandadas a nivel global</p>
+            <p class="text-center mb-5">Capacitación experta en Barquisimeto: Inicia tu carrera en redes con las certificaciones más demandadas a nivel global</p>
 
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <span class="badge bg-primary mb-3">Formaciones</span>
+                    <span class="badge bg-eg-azul-1 mb-3">Formaciones</span>
                     <div class="mb-4">
-                        <img src="https://via.placeholder.com/200x80/FFFFFF/000000?text=MikroTik+Academy"
-                            alt="Mikrotik Academy" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/logos/mikrotik-academy.webp" alt="Mikrotik Academy" class="img-fluid">
                     </div>
                     <div>
-                        <img src="https://via.placeholder.com/200x80/FFFFFF/0099FF?text=Ubiquiti+Networks"
-                            alt="Ubiquiti Networks" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/logos/ubiquiti.png" alt="Ubiquiti Networks" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-8">
+                    <div id="carouselExampleIndicators" class="carousel slide testimonial-carousel">
+
+                        <div class="carousel-indicators custom-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <i class="bi bi-quote" style="font-size: 3rem; color: var(--eg-azul-1);"></i>
+                                <p class="testimonial-quote">Excelente curso. Muy buen contenido y el instructor es de primer nivel. Excelentes instalaciones y atención.</p>
+                                <div class="testimonial-author">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/testimonio/ja.jpg" alt="John Adams">
+                                    <div>
+                                        <strong>John Adams</strong><br>
+                                        <small>Certificación Mikrotik</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <i class="bi bi-quote" style="font-size: 3rem; color: var(--eg-azul-1);"></i>
+                                <p class="testimonial-quote">Excelente curso. Muy buen contenido y el instructor es de primer nivel. Excelentes instalaciones y atención.</p>
+                                <div class="testimonial-author">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/testimonio/tm.jpg" alt="Temistocles Mascagofio">
+                                    <div>
+                                        <strong>Temistocles Mascagofio</strong><br>
+                                        <small>Certificación Mikrotik</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <i class="bi bi-quote" style="font-size: 3rem; color: var(--eg-azul-1);"></i>
+                                <p class="testimonial-quote">Excelente curso. Muy buen contenido y el instructor es de primer nivel. Excelentes instalaciones y atención.</p>
+                                <div class="testimonial-author">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/testimonio/jl.jpg" alt="Juancho Lazo">
+                                    <div>
+                                        <strong>Juancho Lazo</strong><br>
+                                        <small>Certificación Mikrotik</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="col-md-8">
                     <div class="testimonial">
                         <div class="d-flex justify-content-between mb-3">
-                            <i class="bi bi-quote" style="font-size: 2rem; color: #0d6efd;"></i>
+                            <i class="bi bi-quote" style="font-size: 3rem; color: var(--eg-azul-1);"></i>
                             <div>
                                 <button class="btn btn-outline-secondary btn-sm me-2"><i
                                         class="bi bi-chevron-right"></i></button>
@@ -249,9 +308,7 @@
                         <a href="#" class="btn btn-success">Consulta nuestro calendario de cursos</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </div> -->
 
     <!-- Newsletter Section -->
     <!-- <section class="newsletter-section">
@@ -276,13 +333,13 @@
     <section id="contacto" class="contact-section py-2">
         <div class="container-fluid py-3">
             <div class="row justify-content-center">
-                <div class="col-md-5 text-center mb-5">
+                <div class="col-lg-5 text-center mb-5">
                     <h2 class="fs-1">Contáctanos</h2>
                     <p class="lead">¿Tienes un proyecto en mente? ¡Escríbenos!</p>
 
                     <?php echo do_shortcode('[contact-form-7 id="a0b068a" title="Formulario de contacto"]'); ?>
                 </div>
-                <div class="col-md-5 text-center mb-5">
+                <div class="col-lg-5 text-center mb-5">
                     <h2 class="fs-1">Nuestra Ubicación</h2>
                     <p class="lead">Visítanos o escríbenos para coordinar una reunión.</p>
                     <div class="ratio ratio-16x9">

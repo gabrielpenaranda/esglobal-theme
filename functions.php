@@ -17,6 +17,7 @@ function simple_bootstrap_theme_nav_config()
 
     register_nav_menus(array(
         "sbt_primary_menu_id" => "SBT Primary Menu (Top Menu)",
+        "sbt_primary2_menu_id" => "SBT Primary2 Menu (Top Menu)",
         "sbt_secondary_menu_id" => "SBT Secondary Menu"
     ));
 
