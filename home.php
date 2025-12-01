@@ -23,12 +23,12 @@
                                 <?php endif; ?>
                                 <div class="card-body d-flex flex-column">
                                     <h2 class="card-title">
-                                        <a href="<?php the_permalink(); ?>" class="text-decoration-none">
+                                        <a href="<?php the_permalink(); ?>" class="text-decoration-none text-eg-azul-1">
                                             <?php the_title(); ?>
                                         </a>
                                     </h2>
                                     <p class="card-text flex-grow-1"><?php the_excerpt(); ?></p>
-                                    <a class="btn btn-primary mt-auto" href="<?php the_permalink(); ?>">Read more →</a>
+                                    <a class="btn btn-eg-verde-1 mt-auto" href="<?php the_permalink(); ?>">Leer mas →</a>
                                 </div>
                             </div>
                         </div>

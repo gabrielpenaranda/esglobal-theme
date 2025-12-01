@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-md-6 text-center">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/globo5.gif" alt="Soluciones Tecnológicas" class="img-fluid">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/globo8.gif" alt="Soluciones Tecnológicas" class="img-fluid">
             </div>
         </div>
     </div>
