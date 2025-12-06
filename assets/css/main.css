@@ -1055,3 +1055,55 @@
     color: white;
     padding: 60px 0;
 }
+
+/* Cambia el tamaño de todos los videos embebidos */
+.wp-img-embed {
+    margin: 0 auto !important;
+}
+
+.wp-block-embed {
+    max-width: 400px !important;
+    margin: 0 auto !important;
+    height: auto !important;
+}
+
+/* O solo para YouTube */
+.wp-block-embed-youtube {
+    max-width: 700px !important;
+    aspect-ratio: 16 / 9;
+}
+
+/* Boton de volver arriba */
+.btn-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: var(--eg-azul-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--eg-azul-1);
+    /* Azul de Bootstrap */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1030;
+    /* Asegura que esté por encima de todo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.btn-back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-back-to-top:hover {
+    background-color: var(--eg-verde-2);
+    border-color: var(--eg-verde-2);
+    /* Azul más oscuro */
+    transform: translateY(-3px);
+}

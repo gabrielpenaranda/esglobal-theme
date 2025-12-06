@@ -89,6 +89,9 @@
 
         </div>
     </div>
+    <button class="btn-back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-chevron-up fw-bolder"></i>
+    </button>
 </section>
 
 
